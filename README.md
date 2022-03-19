@@ -1,3 +1,9 @@
+<img src="https://raw.githubusercontent.com/devenes/php-beanstalk/main/readme-content/designer.png" alt="diagram-design"
+      width="50%" height="auto" />
+
+[]: # Language: markdown
+[]: # Path: README.md
+
 ## Part 1 - Launch an Application
 
 - First download the php-v1.zip and php-v2.zip files from GitHub and share them via Slack.
@@ -6,7 +12,7 @@
 
 - Click `Create Application`.
 
-- Enter your application name `MySampleApp`.  (You can also add Application tags if you need.)
+- Enter your application name `MySampleApp`. (You can also add Application tags if you need.)
 
 - Select `PHP` for Platform, `PHP 8.0.13 running on 64bit Amazon Linux 2` for Platform Branch and `(Recommended)` for Platform Version.
 
@@ -23,18 +29,17 @@
 
 - From the left-hand menu show the app and env menus, talk about them. Click on the tabs like `Configuration`, `Monitoring` etc. and explain them.
 
-- Go to `EC2` service on AWS console and show the resources 
- - Instances, 
- - Load Balancers,
- - ASG,
- - CloudFormation
- - S3 bucket
- created by Elastic Beanstalk.
+- Go to `EC2` service on AWS console and show the resources
+- Instances,
+- Load Balancers,
+- ASG,
+- CloudFormation
+- S3 bucket
+  created by Elastic Beanstalk.
 
-- Show that even you copy and paste the public IP of the instace created by EB nothing happened in browser. Explian the security group and source part of it. 
+- Show that even you copy and paste the public IP of the instace created by EB nothing happened in browser. Explian the security group and source part of it.
 
 ## Part 2 - Update the Application
-
 
 ### Step 1 - Update the Application
 
@@ -52,14 +57,14 @@ https://blog.shikisoft.com/which_elastic_beanstalk_deployment_should_you_use/
 
 - Deployment Preferences : Keep it as is `All At Once`
 ```
+
 - Wait for Elastic Beanstalk to update the application.
 
 - After the update completed click the link (Application URL) and show the Updated Web Page.
 
 - Click `Mysampleapp` >> `Application versions` and show we have one app but two versions.
 
-### Step 2 - Connect to the EC2 instance hosting the App 
-
+### Step 2 - Connect to the EC2 instance hosting the App
 
 - Click `Mysampleapp-env` >> `Configuration` on the left hand menu, from `Security` Category click `Edit`.
 
@@ -73,7 +78,7 @@ https://blog.shikisoft.com/which_elastic_beanstalk_deployment_should_you_use/
 
 ### Step 3 - Update the Application- Immutable
 
-- Click `Mysampleapp-env` on the left hand menu, and click `Upload and deploy` to update the application. 
+- Click `Mysampleapp-env` on the left hand menu, and click `Upload and deploy` to update the application.
 
 ```bash
 - Choose file           : php-v1.zip***
@@ -95,17 +100,17 @@ https://blog.shikisoft.com/which_elastic_beanstalk_deployment_should_you_use/
 
 - Click `Mysampleapp` >> `Application versions` and show we have one app but 3 versions.
 
+### Step 4 - Update the Application- Add Additional Batch
 
-### Step 4 - Update the Application- Add Additional Batch 
-
-- From the left hand menu, go to the `Mysampleapp-env` and select `Configuration` and in the opening page select  `Capacity` and clik `Edit` to change autoscaling group metrics. Change min. instance nuber from 1 to 2. 
+- From the left hand menu, go to the `Mysampleapp-env` and select `Configuration` and in the opening page select `Capacity` and clik `Edit` to change autoscaling group metrics. Change min. instance nuber from 1 to 2.
 
 ```bash
 Instances Min: 2
-          Max: 4 
+          Max: 4
 
 ```
-- Click `Mysampleapp-env` on the left hand menu, and click `Upload and deploy` to update the application. 
+
+- Click `Mysampleapp-env` on the left hand menu, and click `Upload and deploy` to update the application.
 
 ```bash
 - Choose file           : php-v2.zip***
@@ -120,6 +125,7 @@ Instances Min: 2
       * Fixed: 1
 
 ```
+
 ## Part 3 - Terminate the Environment
 
 ### Step 1 - Terminate the Environment
@@ -137,12 +143,10 @@ Instances Min: 2
 - Click `Environments` on the left hand menu, select terminated `Mysampleapp-env` and then from Actions menu select `Restore`.
   `(The terminated environment will remain visible for about an hour.)`
 
-- Show the environment is deployed and working again. 
+- Show the environment is deployed and working again.
 
 ### Step 3 - Delete Application
 
 - Click `Applications` on the left hand menu, select `MySampleApp`. From `Actions` menu select `Delete application`. Enter the name of the application to confirm and click `Delete`.
 
 - Wait for a while and show both the environment and the application is deleted.
-
-
