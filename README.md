@@ -1,9 +1,6 @@
 <img src="https://raw.githubusercontent.com/devenes/php-beanstalk/main/readme-content/designer.png" alt="diagram-design"
       width="100%" height="auto" />
 
-[]: # Language: markdown
-[]: # Path: README.md
-
 ## Part 1 - Launch an Application
 
 - First download the php-v1.zip and php-v2.zip files from GitHub and share them via Slack.
