@@ -63,6 +63,8 @@ https://blog.shikisoft.com/which_elastic_beanstalk_deployment_should_you_use/
 
 - Click `Mysampleapp` >> `Application versions` and show we have one app but two versions.
 
+<img src="https://raw.githubusercontent.com/devenes/php-beanstalk/main/readme-content/php-output.png" alt="version" width="100%" height="auto" />
+
 ### Step 2 - Connect to the EC2 instance hosting the App
 
 - Click `Mysampleapp-env` >> `Configuration` on the left hand menu, from `Security` Category click `Edit`.
