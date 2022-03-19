@@ -1,5 +1,5 @@
 <img src="https://raw.githubusercontent.com/devenes/php-beanstalk/main/readme-content/designer.png" alt="diagram-design"
-      width="50%" height="auto" />
+      width="100%" height="auto" />
 
 []: # Language: markdown
 []: # Path: README.md
